@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-wrapper {
+  max-width: 960px;
+}
+.section-wrapper > .content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section-wrapper > .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.section-wrapper > .content p {
+  font-size: 1.2rem;
+}
+
+/* Tab */
+.tab-wrapper {
+  background: #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+.tab-wrapper .tab-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-wrapper .tab-btns .btn {
+  border: none;
+  outline: none;
+  background: #e0e0e0;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 200ms linear;
+}
+.tab-wrapper .tab-btns .tab-btn.active {
+  background: #f3f3f3;
+}
+.tab-wrapper .tab-btns .tab-btn {
+  padding: 20px;
+}
+.tab-wrapper .tab-btns .tab-btn:first-child {
+  border-top-left-radius: 10px;
+}
+.tab-wrapper .tab-btns .tab-btn:last-child {
+  border-top-right-radius: 10px;
+}
+.tab-wrapper .tab-contents {
+  padding: 30px;
+}
+.tab-wrapper .tab-contents h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.tab-wrapper .tab-contents p {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* show/hide content */
+.tab-contents .content {
+  display: none;
+}
+.tab-contents .content.active {
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
