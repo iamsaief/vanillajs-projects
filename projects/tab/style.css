@@ -9,10 +9,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  background-color: #e5ecf2;
+  color: #091e42;
 }
 
 .section-wrapper {
@@ -33,7 +35,7 @@ body {
 
 /* Tab */
 .tab-wrapper {
-  background: #f3f3f3;
+  background: #fff;
   border-radius: 10px;
   border: 1px solid #e0e0e0;
 }
@@ -45,7 +47,8 @@ body {
 .tab-wrapper .tab-btns .btn {
   border: none;
   outline: none;
-  background: #e0e0e0;
+  background: #456bed;
+  color: #e5ecf2;
   padding: 10px 20px;
   width: 100%;
   cursor: pointer;
@@ -53,7 +56,8 @@ body {
   transition: 200ms linear;
 }
 .tab-wrapper .tab-btns .tab-btn.active {
-  background: #f3f3f3;
+  background: #fff;
+  color: #456bed;
 }
 .tab-wrapper .tab-btns .tab-btn {
   padding: 20px;
@@ -69,13 +73,14 @@ body {
 }
 .tab-wrapper .tab-contents h4 {
   font-size: 1.5rem;
+  font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
 .tab-wrapper .tab-contents p {
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.15px;
 }
 
 /* show/hide content */
@@ -100,5 +105,3 @@ body {
     transform: translateY(0);
   }
 }
-
-/*# sourceMappingURL=style.css.map */

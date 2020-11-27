@@ -5,7 +5,7 @@
 	--light: #e5ecf2;
 	--transition: all 0.3s linear;
 	--spacing: 20px 0;
-	--radius: 13px;
+	--radius: 10px;
 	--shadow-border: 0px 4px 1px rgba(69, 107, 237, 0.21);
 }
 
@@ -89,8 +89,7 @@ header h1 {
 	gap: 30px;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
-.grid-item {
-}
+
 .grid.project {
 	gap: 35px 30px;
 }
@@ -110,7 +109,7 @@ header h1 {
 }
 
 .project-item h4 {
-	padding: 16px 0 20px;
+	padding: 14px 0 20px;
 	text-align: center;
 }
 

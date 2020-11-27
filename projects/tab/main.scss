@@ -4,19 +4,22 @@
 	box-sizing: border-box;
 }
 
-$primary: gray;
-$default: #e0e0e0;
-$lightgray: #f3f3f3;
+$dark: #091e42;
+$lightblue: #456bed;
+$blue: #1f3bd8;
+$light: #e5ecf2;
 
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
-	font-family: "Roboto", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
+	background-color: #e5ecf2;
+	color: $dark;
 }
 .section-wrapper {
 	max-width: 960px;
@@ -37,7 +40,7 @@ body {
 /* Tab */
 .tab-wrapper {
 	$radius: 10px;
-	background: $lightgray;
+	background: #fff;
 	border-radius: $radius;
 	border: 1px solid #e0e0e0;
 	.tab-btns {
@@ -47,7 +50,8 @@ body {
 		.btn {
 			border: none;
 			outline: none;
-			background: $default;
+			background: $lightblue;
+			color: $light;
 			padding: 10px 20px;
 			width: 100%;
 			cursor: pointer;
@@ -55,7 +59,8 @@ body {
 			transition: 200ms linear;
 		}
 		.tab-btn.active {
-			background: $lightgray;
+			background: #fff;
+			color: $lightblue;
 		}
 		.tab-btn {
 			padding: 20px;
@@ -71,13 +76,14 @@ body {
 		padding: 30px;
 		h4 {
 			font-size: 1.5rem;
+			font-weight: 500;
 			text-transform: capitalize;
 			margin-bottom: 10px;
 		}
 		p {
 			font-size: 1rem;
 			font-weight: 300;
-			letter-spacing: 0.5px;
+			letter-spacing: 0.15px;
 		}
 	}
 }
