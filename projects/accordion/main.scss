@@ -62,37 +62,35 @@ a:focus {
 		background: rgba(255, 255, 255, 0.55);
 		border-radius: 10px;
 		margin-bottom: 15px;
-		transition: 0.3s ease-in;
+		transition: 0.2s linear;
+		overflow: hidden;
+		height: auto;
 
+		.accordion-panel-content {
+			padding: 0px 20px 20px 45px;
+		}
 		&.active {
 			background: rgba(255, 255, 255, 0.75);
 			box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15);
-			.accordion-panel-content {
-				display: block;
-			}
 			.accordion-panel-header i {
 				transform: rotate(180deg);
 			}
 		}
 	}
 	.accordion-panel-header {
-		padding: 20px 20px 20px 40px;
+		padding: 20px 20px 20px 45px;
 		cursor: pointer;
 		position: relative;
 		i {
 			position: absolute;
 			left: 18px;
 			top: 24px;
-			transition: 0.2s ease-in;
+			font-size: 2rem;
+			transition: 0.2s linear;
 		}
 		.title {
 			font-size: 1.8rem;
 			font-weight: 600;
 		}
-	}
-
-	.accordion-panel-content {
-		padding: 0px 20px 20px 40px;
-		display: none;
 	}
 }
