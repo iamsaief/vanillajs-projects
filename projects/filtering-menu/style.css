@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #e5ecf2;
+  color: #091e42;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #1f3bd8;
+  text-decoration: underline;
+}
+
+.section-title {
+  margin: 40px 0;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.filtering-categories {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.filtering-categories .filter-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  background: transparent;
+  background: #dee9fb;
+  border: 1px solid #091e42;
+  color: #091e42;
+  transition: all 0.3s linear;
+}
+.filtering-categories .filter-btn:not(:last-child) {
+  margin-right: 7px;
+}
+.filtering-categories .filter-btn:hover, .filtering-categories .filter-btn:focus {
+  color: #fff;
+  border-color: #1f3bd8;
+  background: #465ee4;
+}
+.filtering-categories .filter-btn:focus {
+  box-shadow: 0 0 0 0.3rem #9fabf1;
+}
+
+.filtering-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-bottom: 70px;
+}
+
+.product-card {
+  padding: 20px;
+  transition: all 0.3s linear;
+  font-size: 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-card:focus, .product-card:hover {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 10px rgba(128, 128, 128, 0.12);
+  transform: translateY(-2px);
+}
+.product-card img {
+  max-width: 180px;
+  margin-right: 20px;
+}
+.product-card .title {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.product-card .desc {
+  font-size: 0.9em;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.product-card .price {
+  font-size: 1.5em;
+  font-weight: 400;
+}
