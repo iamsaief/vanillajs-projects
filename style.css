@@ -3,7 +3,7 @@
 	--lightblue: #456bed;
 	--blue: #1f3bd8;
 	--light: #e5ecf2;
-	--transition: all 0.3s linear;
+	--transition: 0.3s linear;
 	--spacing: 20px 0;
 	--radius: 10px;
 	--shadow-border: 0px 4px 1px rgba(69, 107, 237, 0.21);
