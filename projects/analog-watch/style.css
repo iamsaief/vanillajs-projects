@@ -1,0 +1,115 @@
+:root {
+	--bgcolor: #000304;
+	--hourhand: #ff3161;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+.wrapper {
+	background: #000304;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--bgcolor);
+}
+.watch {
+	width: 350px;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid var(--bgcolor);
+	border-radius: 50%;
+	opacity: 1;
+	box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+		inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+		inset 0 15px 15px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+.watch:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(watch-face.png);
+	background-size: calc(100% - 40px);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.5;
+}
+.watch:after {
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: var(--hourhand);
+	border: 8px solid #fff;
+	border-radius: 50%;
+	z-index: 10;
+	box-shadow: 0 0 45px 90px rgba(255, 255, 255, 0.01);
+}
+.hour,
+.min,
+.sec {
+	position: absolute;
+}
+.hour,
+.hour-hand {
+	width: 170px;
+	height: 170px;
+}
+.min,
+.min-hand {
+	width: 190px;
+	height: 190px;
+}
+.sec,
+.sec-hand {
+	width: 220px;
+	height: 220px;
+}
+.hour-hand,
+.min-hand,
+.sec-hand {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+	transform: rotateZ(0deg);
+}
+.hour-hand:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 80px;
+	background: var(--hourhand);
+	border-radius: 6px 6px 0 0;
+	z-index: 10;
+}
+.min-hand:before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background: #fff;
+	border-radius: 6px 6px 0 0;
+	z-index: 11;
+}
+.sec-hand:before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 140px;
+	background: #fff;
+	border-radius: 6px 6px 0 0;
+	z-index: 12;
+}
