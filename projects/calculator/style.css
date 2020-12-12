@@ -1,0 +1,75 @@
+@import: url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap"rel="stylesheet);
+
+:root {
+	--bg: #202020;
+	--bg-num: #080808;
+	--bg-symbol: #141414;
+	--txt: #dedede;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Inconsolata", monospace;
+	font-size: 20px;
+	background: #0a0c18;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	display: grid;
+	grid-template-columns: repeat(4, 80px);
+	grid-template-rows: minmax(80px, auto) repeat(5, 60px);
+	grid-gap: 2px;
+	background: var(--bg);
+	color: var(--txt);
+	padding: 2px;
+}
+
+.calculator .input-value {
+	font-size: 1.5em;
+	grid-column: 1/-1;
+	align-self: flex-end;
+	justify-self: flex-end;
+	padding: 5px;
+	word-break: break-word;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: var(--txt);
+	background: var(--bg-num);
+	font-size: 1em;
+}
+
+.btn-symbol {
+	background: var(--bg-symbol);
+}
+
+.btn:hover,
+.btn:focus,
+.btn.active {
+	background: var(--bg);
+	box-shadow: inset 0 0 0 2px hsl(0deg 0% 18%);
+}
+
+.col-span-2 {
+	grid-column: span 2;
+}
+
+.row-span-2 {
+	grid-row: span 2;
+}
