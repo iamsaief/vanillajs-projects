@@ -370,6 +370,22 @@ body {
 		background: transparent;
 		font-size: 2.5rem;
 		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		border: 1px solid $dark;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.close-btn {
+			transform: rotate(45deg);
+		}
+		&:hover,
+		&:focus {
+			background: $dark;
+			color: #fff;
+		}
 	}
 }
 
@@ -462,7 +478,7 @@ body {
 			top: 0;
 			width: 300px;
 			height: 100%;
-			overflow-y: scroll;
+			overflow-y: auto;
 			box-shadow: 0px 0px 0 2000px rgba(#000, 0.5);
 			transform: translateX(-300px);
 
@@ -656,13 +672,22 @@ body {
 
 	.btn-search-close {
 		position: absolute;
-		top: 10px;
-		right: 15px;
+		top: 5px;
+		right: 5px;
 		background: transparent;
 		border: 0;
 		outline: 0;
 		font-size: 3rem;
 		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.close-btn {
+			transform: rotate(45deg);
+		}
 	}
 
 	input[type="search"] {

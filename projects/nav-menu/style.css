@@ -335,6 +335,20 @@ body main {
   background: transparent;
   font-size: 2.5rem;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #363636;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-close .btn-nav-close .close-btn {
+  transform: rotate(45deg);
+}
+.nav-close .btn-nav-close:hover, .nav-close .btn-nav-close:focus {
+  background: #363636;
+  color: #fff;
 }
 
 .nav-item.icon > a:before {
@@ -416,7 +430,7 @@ body main {
     top: 0;
     width: 300px;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     box-shadow: 0px 0px 0 2000px rgba(0, 0, 0, 0.5);
     transform: translateX(-300px);
   }
@@ -592,13 +606,21 @@ body main {
 }
 .search-popup .btn-search-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   background: transparent;
   border: 0;
   outline: 0;
   font-size: 3rem;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-popup .btn-search-close .close-btn {
+  transform: rotate(45deg);
 }
 .search-popup input[type=search] {
   width: 100%;
