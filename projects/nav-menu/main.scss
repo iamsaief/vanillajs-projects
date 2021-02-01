@@ -9,7 +9,7 @@ $dark: #363636;
 $default: #636363;
 
 html {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 10px;
 }
 body {
@@ -158,7 +158,7 @@ body {
 	}
 	> .nav-item {
 		&:after {
-			content: "";
+			content: '';
 			position: absolute;
 			width: 100%;
 			height: 2px;
@@ -335,7 +335,7 @@ body {
 			}
 		}
 		&:before {
-			content: "";
+			content: '';
 			position: absolute;
 			top: -10px;
 			left: 10px;
@@ -377,9 +377,13 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 
 		.close-btn {
 			transform: rotate(45deg);
+			position: absolute;
+			width: 100%;
+			height: 100%;
 		}
 		&:hover,
 		&:focus {
@@ -391,7 +395,7 @@ body {
 
 .nav-item.icon {
 	> a:before {
-		content: "";
+		content: '';
 		position: absolute;
 		right: -10px;
 		top: calc(50% + 0px);
@@ -690,7 +694,7 @@ body {
 		}
 	}
 
-	input[type="search"] {
+	input[type='search'] {
 		width: 100%;
 		height: 70px;
 		border: none;
