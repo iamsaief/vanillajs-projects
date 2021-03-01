@@ -178,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Displaying cards
 const displayFilterCards = (filteringItems) => {
-	displayCards = filteringItems
+	const displayCards = filteringItems
 		.map((data) => {
 			return `
                 <div class="product-card">
