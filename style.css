@@ -67,7 +67,7 @@ h5 {
 header {
 	background: #0c0f21;
 	text-align: center;
-	padding: 80px 0;
+	padding: 100px 0;
 }
 
 header h1 {
@@ -111,7 +111,7 @@ header h1 {
 }
 
 .project-item h4 {
-	padding: 14px 0 20px;
+	padding: 14px 15px 20px;
 	text-align: center;
 }
 
@@ -124,4 +124,12 @@ footer {
 	text-align: center;
 	padding: 20px 0;
 	margin-top: 50px;
+}
+
+footer a {
+	font-weight: 400;
+}
+
+footer p {
+	font-weight: 300;
 }

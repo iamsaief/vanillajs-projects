@@ -1,0 +1,45 @@
+body {
+	background: rgba(249, 250, 255, 0.4);
+}
+
+.app-wrapper {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-bottom: none;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 5%), 0 10px 0 -5px #fff, 0 10px 1px -4px rgb(0 0 0 / 5%), 0 20px 0 -10px #fff,
+		0 20px 1px -9px rgb(0 0 0 / 5%);
+	margin: 15px 0 50px;
+	padding: 20px 30px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table tbody tr:nth-of-type(odd) {
+	background-color: rgb(199 199 199 / 5%);
+}
+
+th,
+td {
+	border-bottom: 1px solid #eff0f1;
+}
+
+a.delete-book {
+	text-decoration: none;
+}
+.success,
+.error {
+	color: #fff;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.success {
+	background: green;
+}
+.error {
+	background: red;
+}
