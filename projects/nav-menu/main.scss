@@ -350,7 +350,8 @@ body {
 			color: $primary;
 		}
 	}
-	&:hover > .dropdown {
+	&:hover > .dropdown,
+	&:focus-within > .dropdown {
 		opacity: 1;
 		visibility: visible;
 		transform: translateY(0px);

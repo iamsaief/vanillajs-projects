@@ -315,7 +315,7 @@ body main {
 .nav-item .dropdown > .nav-item:hover > .nav-link {
   color: #0081ff;
 }
-.nav-item:hover > .dropdown {
+.nav-item:hover > .dropdown, .nav-item:focus-within > .dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
