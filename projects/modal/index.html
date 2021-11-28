@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modal</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main>
+			<button class="btn-openmodal" data-modal-target="#modal-1">Open Modal</button>
+			<div class="modal-window" id="modal-1">
+				<span class="modal-overlay"></span>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title">Modal title</h2>
+						<button class="btn-times" data-closemodal-btn>
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, adipisci nisi similique fugit animi
+							quod numquam veritatis distinctio voluptatem, <br />
+							amet voluptate, suscipit nulla unde assumenda tempore! Iure impedit sequi amet atque facilis laudantium
+							esse odit sunt ut nam nobis in dolor, aliquid natus! Fugit tempora magni voluptatem accusamus animi quia.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn-closemodal" data-closemodal-btn>Close Modal</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
